@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 streamlit>=1.32.0
 tensorflow==2.12.0
 Pillow>=10.0.0
 numpy>=1.24.0
+=======
+streamlit>=1.32.0
+tensorflow==2.12.0
+Pillow>=10.0.0
+numpy>=1.24.0
+>>>>>>> 7eb0350 (Rename to requirements.txt and update packages for Streamlit deployment)

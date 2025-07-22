@@ -1,5 +1,5 @@
 import streamlit as st
-import tensorflow as tf
+import tflite_runtime.interpreter as tflite
 from PIL import Image, ImageOps
 import numpy as np
 
@@ -12,7 +12,7 @@ class_labels = {
 # Load TFLite model
 @st.cache_resource
 def load_model():
-    interpreter = tf.lite.Interpreter(model_path="model_unquant.tflite")
+    interpreter = tflite.Interpreter(model_path="model_unquant.tflite")
     interpreter.allocate_tensors()
     return interpreter
 
